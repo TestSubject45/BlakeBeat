@@ -4,15 +4,9 @@
 <main id="content">
 <!-- Display Nav -->
 <?php get_template_part( 'nav', 'below' ); ?>
+<!-- get page title -->
+<?php echo get_the_title($post->ID); ?>
 <!-- Get page content -->
-<?php if ( have_posts() ) :
-	// Start the Loop.
-	while ( have_posts() ) : the_post(); ?>
-        <div>
-            <div id="content-area">
-				<?php the_content(); ?>
-            </div>
-        </div>
-<?php endwhile;endif; ?>  
+<?php echo get_post_field('post_content', $post->ID); ?>
 </main>
 <?php get_footer(); ?>
