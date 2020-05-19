@@ -5,7 +5,7 @@ Github Plugin URI: https://github.com/TestSubject45/BlakeBeat
 Author: Gambel Labs
 Author URI: https://GambelLabs.com/
 Description: Custom there for GambelLabs.com
-Version: 0.0.3
+Version: 0.0.4
 License: GNU General Public License
 License URI: https://www.gnu.org/licenses/gpl.html
 Tags: 
@@ -23,8 +23,26 @@ html,body{
 	border:0;
 	vertical-align:baseline
 }
+#wrapper{
+	width:95%;
+	margin:auto;
+}
 h1{
 	font-family: 'Inconsolata', monospace;
 	size:1em;
 }
 
+/*Header and Nav Styling */
+#header{
+}
+#site-title{
+	width: 15%
+}
+#header nav{
+	width:70%;
+	display:flex;
+	flex-direction:row;
+}
+#header nav ul li{
+	list-style-type:none;
+}
