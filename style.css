@@ -57,3 +57,41 @@ h1{
 img.portImg{
 	max-width:200px;
 }
+
+/*Nav Menu */
+#site-title{
+	font-size:1.5em;
+	margin-left:10px;
+	font-family: 'Coda', monospace;
+}
+#menu{
+	background-color:rgba(201,201,201,0.4);
+}
+#menu #wrap{
+	width:1280px;
+	margin:auto;
+}
+#menu ul{
+	display:flex;
+	flex-wrap:nowrap;
+	align-content:center;
+	width:100%;
+	list-style-type:none;
+}
+#menu ul li{
+	font-family:'Coda', cursive;
+}
+#menu ul li a{
+	font-size:1.4em;
+	padding:20px;
+	
+}
+#menu ul li a:hover{
+	font-size:1.5em;
+	*background-color:#75dddd;
+	*color:black!important;
+}
+#menu ul li a:active{
+	*background-color:#92bcea;
+}
+
