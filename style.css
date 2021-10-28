@@ -14,49 +14,70 @@ Text Domain: blakebeat
 */
 
 
+/*BEGIN CSS */
 
 
-/* CSS Initialize */
-html,body{
+/* Defaulting */
+*,
+*:before,
+*:after {
 	margin:0;
 	padding:0;
-	border:0;
-	vertical-align:baseline
+	box-sizing: border-box;
 }
-#wrapper{
-	width:95%;
-	margin:auto;
+body{
+	background-color:white;
+	width:100%;
+	display:block;
 }
-h1{
-	font-family: 'Inconsolata', monospace;
-	size:1em;
+p{
+	line-height:1.2em;
+	font-size:16px;
+	font-family:monospace;
+	margin-bottom:15px;
 }
-
-/*Header and Nav Styling */
-#header{
+ul,li{
+	font-size:16px;
+	font-family:monospace;
+	margin-bottom:15px;
 }
-#site-title{
-	width: 15%
+h1,h2,h3,h4{
+	margin:10px;
+	font-family: monospace;
 }
-#header nav{
+a{
+	text-decoration:none;
+	color:black;
+	font-family: monospace;
+}
+#content a{
+	color:#5189ba;
+}
+#container{
+	width:98%;
+	margin-left:15px;
+}
+#content{
 	width:70%;
-	display:flex;
-	flex-direction:row;
+	float:left;
+	margin-right:20px;
+	margin-left:20px
 }
-#header nav ul li{
-	list-style-type:none;
+#sidebar{
+	width:23%;
+	float:right;
+}
+#sidebar h3{
+	line-height:1em;
+}
+article section.entry-content{
+	margin-top:25px;
+}
+/*Align*/
+.aligncenter{
+	text-align:center;
 }
 
-/*Portfolio Page*/
-.projects a{
-	color:black!important;
-} 
-.projects ul,.projects li{
-	list-style-type:none;
-}
-img.portImg{
-	max-width:200px;
-}
 
 /*Nav Menu */
 #site-title{
@@ -95,3 +116,100 @@ img.portImg{
 	*background-color:#92bcea;
 }
 
+/* TITLES */
+.entry-title{
+	*color:#878c8f;
+	font-family:'Coda', cursive;
+	font-size:2em;
+	margin-top:10px;
+	margin-left:5px;
+}
+
+/*Flexbox*/
+.flexwrap{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:flex-start;
+}
+.flexbox{
+	width:25%;
+	margin: 10px 15px;
+}
+.flexbox img{
+	background-color:grey;
+	padding: 8px 10px;
+	border-radius:15px;
+}
+
+/*Portfolio Page*/
+.projects a{
+	color:black!important;
+} 
+.projects ul,.projects li{
+	list-style-type:none;
+}
+img.portImg{
+	max-width:200px;
+}
+/*Gallery*/
+.gallery h3{
+	display:none;
+}
+
+/*Button*/
+.button{
+	padding:15px;
+	background-color:#878C8F;
+	color:white;
+	display:inline-block;
+	border-radius:20px;
+}
+.button:hover{
+	background-color:white;
+	color:black;
+}
+/*Sidebar*/
+#sidebar #recent-posts-4{
+	list-style-type:none;
+}
+#sidebar #recent-posts-4 .widget-title{
+	font-size:2em;
+}
+
+
+
+
+
+/*Media Queries*/
+@media(max-width:700px){
+	
+	#container{
+		width:98%;
+		margin-left:5px;
+	}
+	#content{
+		width:100%;
+		float:none;
+		margin-left:10px;
+	}
+	#sidebar{
+		width:100%;
+		float:none;
+		margin-left:10px;
+	}
+	#sidebar ul li{
+		list-style-type:none;
+	}
+	
+	
+	.flexwrap{
+		display:flex;
+		flex-wrap:wrap;
+		flex-direction:column;
+	}
+	.flexbox{
+		width:100%;
+		margin: 10px 15px;
+	}
+	
+}
