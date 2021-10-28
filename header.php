@@ -15,8 +15,10 @@
 <div id="site-title">
 <?php echo '<h1>'; ?><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_html( get_bloginfo( 'name' ) ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a><?php echo '</h1>'; ?>
 </div>
-<nav id="menu">
+<nav id="menu" role="navigation">
+	<div id="wrap">
 <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+	</div>
 </nav>
 </header>
 <div id="container">
