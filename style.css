@@ -141,6 +141,9 @@ article section.entry-content{
 	padding: 8px 10px;
 	border-radius:15px;
 }
+.flexbox h3{
+	margin:10px 0px 10px 0px;
+}
 
 /*Portfolio Page*/
 .projects a{
